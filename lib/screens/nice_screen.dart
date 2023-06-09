@@ -1,9 +1,9 @@
-import 'package:flutter/gestures.dart';
+//import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:weather_app/model/weather_model.dart';
 import 'package:weather_app/services/weather_api_client.dart';
-import 'package:weather_app/views/additional_information.dart';
+//import 'package:weather_app/views/additional_information.dart';
 import 'package:weather_app/views/current_weather.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 import 'package:weather_app/widgets/navigation_drawer_widget.dart';
@@ -148,10 +148,10 @@ class _NiceScreenState extends State<NiceScreen> {
         ),
 
         body: Container(
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                'assets/Background/${background!}.png',
+                'assets/Background/$background.png',
               ),
               fit: BoxFit.cover,
             )
@@ -208,7 +208,7 @@ class _NiceScreenState extends State<NiceScreen> {
                                       )
                                     ),
                                     Text(
-                                      "${data!.realFeel!.round()}°$unitSymbol",
+                                      "${data!.realFeel!.toInt()}°$unitSymbol",
                                       style: const TextStyle(
                                         fontSize: 28,
                                         fontWeight: FontWeight.w400,
@@ -341,11 +341,19 @@ class _NiceScreenState extends State<NiceScreen> {
                                     ),
                                   ),
                                   Text(
-                                    "${data!.windSpeed} $speedUnits",
+                                    data!.windSpeed.toString(),
                                     style: const TextStyle(
                                         fontSize: 24,
                                         fontWeight: FontWeight.w600,
                                         color: Colors.white
+                                    ),
+                                  ),
+                                  Text(
+                                    speedUnits,
+                                    style: const TextStyle(
+                                        fontSize: 17,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.white60
                                     ),
                                   ),
                                 ],

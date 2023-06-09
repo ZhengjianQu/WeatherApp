@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black.withOpacity(0.8),
           toolbarHeight: 50,
           leading: IconButton(
-            icon: Icon(Icons.arrow_back),
+            icon: const Icon(Icons.arrow_back),
             onPressed: () {
               // TODO: TODO Samuel has que sirva para la navigation to the previous screen
             },
@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Name',
                               style: TextStyle(
                                 fontSize: 20,
@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'Role',
                               style: TextStyle(
                                 fontSize: 16,
@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'email@example.com',
                               style: TextStyle(
                                 fontSize: 12,
@@ -88,22 +88,21 @@ class MyApp extends StatelessWidget {
                               onPressed: () {
                                 // TODO: Samuel has que sirva
                               },
-                              child: Text(
+                              style: ElevatedButton.styleFrom(
+                                foregroundColor: Colors.white, backgroundColor: const Color(0x48319D80),
+                                fixedSize: const Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: const BorderSide(
+                                    color: Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                              child: const Text(
                                 'Info',
                                 style: TextStyle(
                                   fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
                                 ),
                               ),
                             ),
@@ -125,7 +124,7 @@ class MyApp extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Name',
                               style: TextStyle(
                                 fontSize: 20,
@@ -134,7 +133,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'Role',
                               style: TextStyle(
                                 fontSize: 16,
@@ -143,7 +142,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'email@example.com',
                               style: TextStyle(
                                 fontSize: 12,
@@ -155,22 +154,21 @@ class MyApp extends StatelessWidget {
                               onPressed: () {
                                 // TODO: TODO Samuel has que sirva
                               },
-                              child: Text(
+                              style: ElevatedButton.styleFrom(
+                                foregroundColor: Colors.white, backgroundColor: const Color(0x48319D80),
+                                fixedSize: const Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: const BorderSide(
+                                    color: Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                              child: const Text(
                                 'Info',
                                 style: TextStyle(
                                   fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
                                 ),
                               ),
                             ),
@@ -192,7 +190,7 @@ class MyApp extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Name',
                               style: TextStyle(
                                 fontSize: 20,
@@ -201,7 +199,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'Role',
                               style: TextStyle(
                                 fontSize: 16,
@@ -210,7 +208,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'email@example.com',
                               style: TextStyle(
                                 fontSize: 12,
@@ -222,22 +220,21 @@ class MyApp extends StatelessWidget {
                               onPressed: () {
                                 // TODO: Samuel has que sirva
                               },
-                              child: Text(
+                              style: ElevatedButton.styleFrom(
+                                foregroundColor: Colors.white, backgroundColor: const Color(0x48319D80),
+                                fixedSize: const Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: const BorderSide(
+                                    color: Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                              child: const Text(
                                 'Info',
                                 style: TextStyle(
                                   fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
                                 ),
                               ),
                             ),
@@ -259,7 +256,7 @@ class MyApp extends StatelessWidget {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text(
+                            const Text(
                               'Name',
                               style: TextStyle(
                                 fontSize: 20,
@@ -268,7 +265,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'Role',
                               style: TextStyle(
                                 fontSize: 16,
@@ -277,7 +274,7 @@ class MyApp extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(height: 4),
-                            Text(
+                            const Text(
                               'email@example.com',
                               style: TextStyle(
                                 fontSize: 12,
@@ -289,29 +286,28 @@ class MyApp extends StatelessWidget {
                               onPressed: () {
                                 // TODO Samuel has que sirva
                               },
-                              child: Text(
+                              style: ElevatedButton.styleFrom(
+                                foregroundColor: Colors.white, backgroundColor: const Color(0x48319D80),
+                                fixedSize: const Size(73, 16),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30),
+                                  side: const BorderSide(
+                                    color: Color(0x33FFFFFF),
+                                    width: 1,
+                                  ),
+                                ),
+                              ),
+                              child: const Text(
                                 'Info',
                                 style: TextStyle(
                                   fontSize: 12,
-                                ),
-                              ),
-                              style: ElevatedButton.styleFrom(
-                                primary: const Color(0x48319D80),
-                                onPrimary: Colors.white,
-                                fixedSize: Size(73, 16),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  side: BorderSide(
-                                    color: const Color(0x33FFFFFF),
-                                    width: 1,
-                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
                       ),
-                      SizedBox(height: 57),
+                      const SizedBox(height: 57),
                     ],
                   ),
                 ),
