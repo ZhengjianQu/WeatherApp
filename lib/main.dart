@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/screens/screen1.dart';
-import 'package:weather_app/screens/nice_screen.dart';
+import 'package:weather_app/screens/combined_screen.dart';
 
 
 //import 'delegates/custom_search_delegate.dart';
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes:
-      {'/': (context) => NiceScreen(),
+      {'/': (context) => const CombinedPage(),
       },
     );
   }

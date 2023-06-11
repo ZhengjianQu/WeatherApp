@@ -19,10 +19,9 @@ class WeatherData {
 
   factory WeatherData.fromJson(Map<String, dynamic> json) {
     final main = json['main'];
-    final weather = json['weather'][0];
-
+    final weather = json['weather'][0]['main'].toString();
+    final iconUrl = json['weather'][0]['icon'];
     final temperature = main['temp'].round().toString();
-    final weatherDescription = weather['description'].toString();
     final timestamp = DateTime.fromMillisecondsSinceEpoch(json['dt'] * 1000);
     final date = DateFormat('MM/dd').format(timestamp);
     final week = DateFormat('EEEE').format(timestamp);// Format the timestamp
@@ -30,12 +29,11 @@ class WeatherData {
 
     return WeatherData(
       temperature: temperature,
-      weather: weatherDescription,
+      weather: weather,
       date: date,
       week: week,
       time: time,
-      iconUrl:
-      'http://openweathermap.org/img/w/${json['weather'][0]['icon']}.png',
+      iconUrl: iconUrl,
     );
   }
 }

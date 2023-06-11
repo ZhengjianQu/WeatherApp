@@ -9,6 +9,13 @@ import 'package:toggle_switch/toggle_switch.dart';
 import 'package:weather_app/widgets/navigation_drawer_widget.dart';
 
 
+var background = "clear";
+var location = "Berlin";
+var units = "metric";
+var unitSymbol = "°C";
+var speedUnits = "m/s";
+var selectedUnitIndex = 0;
+
 class NiceScreen extends StatefulWidget{
   const NiceScreen({Key? key}) : super(key: key);
   @override
@@ -24,12 +31,8 @@ class _NiceScreenState extends State<NiceScreen> {
   bool _showClearButton = false;
 
 
-  var location = "Berlin";
-  var units = "metric";
-  var unitSymbol = "C";
-  var speedUnits = "m/s";
-  var selectedUnitIndex = 0;
-  var background = "clear";
+
+
 
   //CustomSearchDelegate searchDelegate = CustomSearchDelegate();
 
@@ -132,11 +135,11 @@ class _NiceScreenState extends State<NiceScreen> {
                     selectedUnitIndex = index!;
                     if (index == 0) {
                       units = "metric";
-                      unitSymbol = "C";
+                      unitSymbol = "°C";
                     }
                     else {
                       units = "imperial";
-                      unitSymbol = "F";
+                      unitSymbol = "°F";
                       speedUnits = "m/h";
                     }
                   });
@@ -173,7 +176,7 @@ class _NiceScreenState extends State<NiceScreen> {
                         return Column(crossAxisAlignment: CrossAxisAlignment.center,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            currentWeather("${data!.skyIcon}", "${data!.temp!.round()} °$unitSymbol", "${data!.cityName}", "${data!.mainDescription}"),
+                            currentWeather("${data!.skyIcon}", "${data!.temp!.round()}$unitSymbol", "${data!.cityName}", "${data!.mainDescription}"),
                           ],
                         );
                       }
@@ -198,7 +201,7 @@ class _NiceScreenState extends State<NiceScreen> {
                                 padding: const EdgeInsets.all(20),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  children:[
                                     const Text(
                                       "Feels like",
                                       style: TextStyle(
@@ -208,7 +211,8 @@ class _NiceScreenState extends State<NiceScreen> {
                                       )
                                     ),
                                     Text(
-                                      "${data!.realFeel!.toInt()}°$unitSymbol",
+                                      //"${data!.realFeel!.toInt().toString()}°",
+                                      (data!.realFeel!.toInt().toString() + unitSymbol),
                                       style: const TextStyle(
                                         fontSize: 28,
                                         fontWeight: FontWeight.w400,

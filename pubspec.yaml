@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   toggle_switch: ^2.1.0
   geolocator: ^9.0.2
   intl: ^0.17.0
@@ -66,8 +67,29 @@ icons_launcher:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/Icons/
-    - assets/Background/
+    - assets/Icons/01d.png
+    - assets/Icons/01n.png
+    - assets/Icons/02d.png
+    - assets/Icons/02n.png
+    - assets/Icons/03d.png
+    - assets/Icons/03n.png
+    - assets/Icons/04d.png
+    - assets/Icons/04n.png
+    - assets/Icons/09d.png
+    - assets/Icons/09n.png
+    - assets/Icons/10d.png
+    - assets/Icons/10n.png
+    - assets/Icons/11d.png
+    - assets/Icons/11n.png
+    - assets/Icons/13d.png
+    - assets/Icons/13n.png
+    - assets/Icons/50d.png
+    - assets/Icons/50n.png
+    - assets/Background/clear.png
+    - assets/Background/clouds.png
+    - assets/Background/drizzle.png
+    - assets/Background/snow.png
+    - assets/Background/thunderstorm.png
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
